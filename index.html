@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #f69f0a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: rgb(19, 7, 243);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #e30ae3;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        h2 {
+            color: #0880dc;
+        }
+
+        /* About Us Section */
+        #about {
+            background-color: #f7b708;
+        }
+
+        /* Menu Section */
+        #menu {
+            background-color: #f7b204;
+        }
+
+        .dish {
+            margin-bottom: 15px;
+        }
+
+        .dish span {
+            float: right;
+        }
+
+        /* Chef Bio Section */
+        #chef {
+            background-color: #f7c306;
+        }
+
+        .chef-bio {
+            display: flex;
+            align-items: center;
+        }
+
+        .chef-bio img {
+            border-radius: 50%;
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        /* Reservation Form */
+        #reservation form {
+            background-color: #f7ba06;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        #reservation form input, #reservation form select, #reservation form button {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #0918c3;
+        }
+
+        /* Review Section */
+        #reviews {
+            background-color: #f9d003;
+        }
+
+        .testimonial {
+            margin-bottom: 15px;
+        }
+
+        /* Opening Hours Section */
+        #hours {
+            background-color: #f8c703;
+        }
+
+        /* Gallery Section */
+        #gallery img {
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        /* Location Map */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f7ba06;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#chef">Chef's Bio</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#hours">Opening Hours</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav>
+
+    <!-- Restaurant Name -->
+    <header>
+        <h1 style="text-align: center; margin-top: 70px;">Delicious Bites Restaurant</h1>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Delicious Bites, where we serve food that warms the heart and soul. Our journey began with a simple love for crafting dishes that combine tradition with innovation. Our goal is to provide a memorable dining experience with delicious meals, excellent service, and a cozy atmosphere.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="dish">
+            <strong>Grilled Salmon</strong> <span>$15.99</span>
+            <p>Freshly grilled salmon served with seasonal vegetables and lemon butter sauce.</p>
+        </div>
+        <div class="dish">
+            <strong>Margherita Pizza</strong> <span>$12.99</span>
+            <p>Classic pizza with fresh mozzarella, basil, and a tangy tomato base.</p>
+        </div>
+        <div class="dish">
+            <strong>Chicken Alfredo</strong> <span>$14.99</span>
+            <p>Creamy alfredo sauce tossed with grilled chicken and fettuccine pasta.</p>
+        </div>
+    </section>
+
+    <!-- Chef's Bio Section -->
+    <section id="chef">
+        <h2>Meet Our Chef</h2>
+        <div class="chef-bio">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*Mtfrk45yxfpHjc8Jfuh3KQ.jpeg" alt="Chef Photo">
+            <p><strong>Chef Michael Rodriguez</strong> has over 20 years of culinary experience, crafting dishes that blend contemporary flavors with traditional cooking methods. His passion for food is evident in every dish he creates, always aiming to provide a unique and enjoyable dining experience for all guests.</p>
+        </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+                <option value="" disabled selected>Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial">
+            <p>"The food was absolutely amazing! I will definitely be back!" - Sarah</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great atmosphere and the dishes were delicious. Highly recommend!" - John</p>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="hours">
+        <h2>Opening Hours</h2>
+        <p>Monday to Friday: 11:00 AM - 10:00 PM</p>
+        <p>Saturday and Sunday: 12:00 PM - 11:00 PM</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2017/02/skillet-seared-salmon-lemon-butter-sauce-4.jpg" alt="Dish 1">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/pizza-recipes-65a191c48d873.jpeg" alt="Dish 2">
+        <img src="https://valentinascorner.com/wp-content/uploads/2020/03/Chicken-Mushroom-Fettuccine-Alfredo-13.jpg" alt="Dish 3">
+    </section>
+
+    <!-- Location Map Section -->
+    <section id="location">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509422!2d144.95592311531687!3d-37.81720997975143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne!5e0!3m2!1sen!2sau!4v1630142532727!5m2!1sen!2sau"></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Bites Restaurant. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
